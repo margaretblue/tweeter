@@ -1,0 +1,17 @@
+<h1>TweetSearch</h1>
+<!-- Search is essentially a create -->
+<div>
+ 
+<%= form_tag("tweets/fetch", method: "get") do %>
+	<%= label_tag(:searchterm, "Enter a Twitter Handle : @") %>
+	<%= text_field_tag(:searchterm) %>
+	<%= submit_tag("Search") %>
+	<% end %>
+
+</div>
+
+<!-- This is for displaying -->
+<div id= "display">
+  <br />
+
+</div>
